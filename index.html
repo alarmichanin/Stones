@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>Kamushki</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="contentBody">
+	<div id="btnPlay">
+		<button id = "buttPlay" onclick="start()">Play!</button>
+    </div>
+    
+    <div id="btnPlay" style="display:none">
+      <button id = "buttPlay" onclick="start()">Play!</button>
+    </div>
+    
+    <div id="firstPlayer" style="display:none">
+      <span>Enter 1 user's name:</span>
+      <form action="#" id="firstF">
+        <input id="first" type="search" placeholder="Text search" oninput="showBtn1()">
+        <button type="submit" onclick="zapolnen1()"id="btn1"> GO</button>
+      </form>
+    </div>
+
+    <div id="secPlayer" style="display:none">
+      <span>Enter 2 user's name:</span>
+      <form action="#">
+        <input id="second" type="search" placeholder="Text search" oninput="showBtn2()">
+        <button type="submit" onclick="zapolnen2()"id="btn2"> GO</button>
+      </form>
+    </div>
+    <div id="game" style ="display:none">
+      <div id = "FP">     
+        <div id="nameOfPlayer1">
+        </div>
+        <hr>
+        <div id="playBtn1" style="visibility:hidden">
+        <button id="player1">Take 1</button>
+        <button id="player1">Take 2</button>
+        <button id="player1">Take 3</button>
+        </div>
+      </div>
+      <div id = "midl">
+        <div id="stone"></div>
+        <div id="stone"></div>
+        <div id="stone"></div>
+        <div id="stone"></div>
+        <div id="stone"></div>
+        <div id="stone"></div>
+        <div id="stone"></div>
+        <div id="stone"></div>
+        <div id="stone"></div>
+        <div id="stone"></div>
+      </div>
+      <div id = "SP">
+       <div id="nameOfPlayer2">
+         
+         </div>    
+        <hr>
+        <div id="playBtn2" style="visibility:hidden">
+        <button id="player2">Take 1</button>
+        <button id="player2">Take 2</button>
+        <button id="player2">Take 3</button>
+        </div>
+      </div>
+    </div>
+
+    <div id = "win" style="display:none">
+      <div id="winText">WIn</div>
+      <button id = "backbutton" onclick="restart()">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

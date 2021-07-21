@@ -1,0 +1,298 @@
+html, body
+{
+  height: 100%;
+  width: 100%;
+  overflow:  hidden;
+  transition: 0.5s linear;
+}
+
+/* 
+there are style for button and effect after inline on this 
+*/
+#buttPlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  width: 40%;
+  margin:auto;
+  border:solirgb(54, 54, 54)ck 2px;
+  border-radius: 20px;
+  background-color: black;
+  font-size: 350%;
+  font-family: Impact, fantasy;
+  color: white;
+  transition: 0.3s linear;
+}
+
+#win
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+#nameOfPlayer1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:white;
+}
+#nameOfPlayer2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:black;
+}
+#nameOfPlayer2,#nameOfPlayer1
+{
+  font-family: Impact, fantasy;
+  font-size: 200%;
+}
+
+#winText
+{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Impact, fantasy;
+  font-size: 350%;
+  color: white;
+  margin-top: 100px;
+  height: 10%;
+  width:100%;
+}
+
+hr {
+  margin: 20px 0;
+	padding: 0;
+	height: 6px;
+	border: none;
+	background: linear-gradient(45deg, #333, #ddd)
+}
+hr:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+#backbutton
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  width: 40%;
+  margin:auto;
+  border:solirgb(54, 54, 54)ck 2px;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 350%;
+  font-family: Impact, fantasy;
+  color: black;
+  transition: 0.3s linear;
+}
+#backbutton:hover{
+color:white;
+background-color: black;
+}
+
+#btn1
+{
+  visibility:hidden;
+}
+
+#btn2
+{
+  visibility:hidden;
+}
+
+#buttPlay:hover {
+	background-color: rgb(255, 255, 255);
+	color: black;
+  border:0px;
+}
+/*
+centering of content
+*/
+#btnPlay
+{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+#firstPlayer
+{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+#secPlayer
+{
+display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+#game
+{
+  display: flex;
+  justify-content:stretch;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#player1, #player2
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 50%;
+  font-size: 200%;
+  border:solirgb(54, 54, 54)ck 2px;
+  border-radius: 20px;
+  background-color: white;
+  font-family: Impact, fantasy;
+  transition: 0.2s linear;
+  padding: 5px;
+}
+#player1:hover,#player2:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/*
+three part of playground 
+FP - first player
+midl-midle
+SP - second player 
+*/
+#FP
+{
+  background-color: rgb(0, 0, 0);
+  height: 100% ;
+  width: 70%;
+  transition:  0.3s linear;
+}
+#midl
+{
+  background-color: white;
+  height: 100%;
+  width: 20%;
+  flex-flow: row;
+  transition: 0.3s linear;
+}
+
+#SP
+{
+  background-color: rgb(255, 255, 255);
+  height: 100% ;
+  width: 30%;
+  transition:0.3s linear;
+}
+/*
+for registration files
+*/
+
+form{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+input[type="search"]{
+  outline: none;
+  border: 2px solid #222;
+  padding: 5px 100px 5px 30px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border-radius: 25px;
+}
+button[type="submit"]{
+  position: absolute; top: 27px; right: -10px;
+  z-index: 9;
+  outline: none;
+  border: none;
+  display: inline-block;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover{
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#playBtn1,#playBtn2{
+     display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#midl{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 10%;
+  padding: 2%;
+}
+
+#stone{
+  background-color: grey;
+  height: 7%;
+  width: 50%;
+  border-radius: 50%;
+  margin: 2%;
+}
+
+@media screen and (max-device-width: 630px)
+{
+  #game
+  {
+    flex-direction: column;
+  }
+  #FP,#SP{
+  width:100% !important;
+  }
+  #midl
+  {
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    padding: 0px;
+  }
+
+  #stone{
+    height: 30%;
+    width: 5%;
+    border-radius: 50%;
+    margin: 2%;
+  }
+}
